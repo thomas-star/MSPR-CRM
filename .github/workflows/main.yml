@@ -11,7 +11,7 @@ jobs:
     - name: Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
-        server: files.000webhost.com
-        username: payetonkawa-webshop
-        password: Epsi2020
+        server: ${{secrets.SRV}}
+        username: ${{secrets.USNM}}
+        password: ${{secrets.MDPES}}
         server-dir : public_html/
